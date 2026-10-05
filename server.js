@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Cadena de conexión a tu MongoDB Atlas (reemplaza <db_password> por tu contraseña real)
-const uri = "mongodb+srv://tu_usuario:<db_password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority";
+// Cadena de conexión actualizada con tu clúster real de MongoDB Atlas
+const uri = "mongodb+srv://carolinabenitezpretel123_db_user:<Cb00321764>@cluster0.npr43uw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(uri);
 
 let db, teamsCollection;
@@ -54,6 +54,7 @@ app.get('/api/teams/:pais/jugadores', async (req, res) => {
     }
 });
 
+// Configuración del puerto para Render
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
