@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Cadena de conexión actualizada con tu clúster real de MongoDB Atlas
-const uri = "mongodb+srv://carolinabenitezpretel123_db_user:<Cb00321764>@cluster0.npr43uw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// Cadena de conexión corregida sin los símbolos en la contraseña
+const uri = "mongodb+srv://carolinabenitezpretel123_db_user:Cb00321764@cluster0.npr43uw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(uri);
 
 let db, teamsCollection;
