@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 // Cadena de conexión corregida sin los símbolos en la contraseña
-const uri = "mongodb+srv://carolinabenitezpretel123_db_user:Cb00321764@cluster0.npr43uw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://carolinabenitezpretel123_db_user:cb00321764@cluster0.npr43uw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(uri);
 
 let db, teamsCollection;
